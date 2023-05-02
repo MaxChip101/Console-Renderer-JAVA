@@ -5,10 +5,13 @@ import renderer.ConsoleRenderer;
 public class Example {
 
 	public static void main(String[] args) {
+		// Instances The Console Renderer Class
 		ConsoleRenderer cr = new ConsoleRenderer();
 		
-		cr.Screen_Setup(64, 6);
+		// Sets Screen Size to: WIDTH = 6, HEIGHT = 3;
+		cr.Screen_Setup(6, 3);
 		
+		// Makes a Smiley Face in ACII
 		cr.Coordinate(3, 1, "|");
 		cr.Coordinate(5, 1, "|");
 		cr.Coordinate(4, 2, "^");
@@ -18,6 +21,7 @@ public class Example {
 		cr.Coordinate(5, 3, "_");
 		cr.Coordinate(6, 3, "/");
 		
+		// Renders The Coordinates
 		cr.Render();
 	}
 
