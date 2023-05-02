@@ -2,7 +2,7 @@ package main;
 
 import renderer.ConsoleRenderer;
 
-public class Main {
+public class Example {
 
 	public static void main(String[] args) {
 		ConsoleRenderer cr = new ConsoleRenderer();
