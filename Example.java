@@ -1,4 +1,3 @@
-import ConsoleRenderer;
 import mods.StringText;
 
 public class Example {
