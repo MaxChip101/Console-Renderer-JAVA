@@ -1,3 +1,5 @@
+package mods;
+
 import ConsoleRenderer;
 
 public class StringText {
