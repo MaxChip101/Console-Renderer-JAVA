@@ -8,8 +8,8 @@ public class ConsoleRenderer {
 	public String Screen_Pixels[];
 	
 	public void Screen_Setup(int Width, int Height) {
-		Screen_Width = Width;
-		Screen_Height = Height;
+		Screen_Width = Width + 1;
+		Screen_Height = Height + 1;
 		Screen_Total = Screen_Width * Screen_Height;
 		Screen_Pixels = new String[Screen_Total];
 		for(int i = 0; i <= Screen_Pixels.length; i++) {
