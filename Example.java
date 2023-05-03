@@ -1,5 +1,3 @@
-package main;
-
 import renderer.ConsoleRenderer;
 
 public class Example {
