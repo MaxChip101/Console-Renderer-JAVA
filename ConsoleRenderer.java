@@ -1,5 +1,3 @@
-package renderer;
-
 import java.io.IOException;
 
 public class ConsoleRenderer {
