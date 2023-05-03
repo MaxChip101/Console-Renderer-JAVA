@@ -1,4 +1,4 @@
-import renderer.ConsoleRenderer;
+import ConsoleRenderer;
 
 public class Example {
 
