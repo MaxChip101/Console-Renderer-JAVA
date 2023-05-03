@@ -1,13 +1,15 @@
+package renderer;
+
 import java.io.IOException;
 
 public class ConsoleRenderer {
 	
-	private int Screen_Width;
-	private int Screen_Height;
-	private int Screen_Total;
-	public String Screen_Pixels[];
+	private static int Screen_Width;
+	private static int Screen_Height;
+	private static int Screen_Total;
+	public static String Screen_Pixels[];
 	
-	public void Screen_Setup(int Width, int Height) {
+	public static void Screen_Setup(int Width, int Height) {
 		Screen_Width = Width + 1;
 		Screen_Height = Height + 1;
 		Screen_Total = Screen_Width * Screen_Height;
@@ -19,7 +21,7 @@ public class ConsoleRenderer {
 		}
 	}
 	
-	public void Coordinate(int X, int Y, String Symbol) {
+	public static void Coordinate(int X, int Y, String Symbol) {
 		if(Symbol.length() == 1) {
 			int position;
 			position = Y * Screen_Width + X;
@@ -37,7 +39,7 @@ public class ConsoleRenderer {
 		}
 	}
 	
-	public void Render() {
+	public static void Render() {
 		Clear_Console();
 		int height_index = 0;
 		for(int i = 0; i <= Screen_Pixels.length; i++) {
@@ -54,7 +56,7 @@ public class ConsoleRenderer {
 		
 	}
 	
-	private void Clear_Console() {
+	private static void Clear_Console() {
 		try {
 	        if (System.getProperty("os.name").contains("Windows"))
 	            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
